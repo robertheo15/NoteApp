@@ -5,13 +5,13 @@
 //  Created by Siddhant Mehta on 2024-06-13.
 //
 
-import SwiftUI
+//import SwiftUI
 
-struct MeshGradientView: View {
-    @Binding var maskTimer: Float
-    @Binding var gradientSpeed: Float
-
-    var body: some View {
+//struct MeshGradientView: View {
+//    @Binding var maskTimer: Float
+//    @Binding var gradientSpeed: Float
+//
+//    var body: some View {
 //        if #available(iOS 18.0, *) {
 //            MeshGradient(width: 3, height: 3, points: [
 //                .init(0, 0), .init(0.0, 0), .init(1, 0),
@@ -38,18 +38,18 @@ struct MeshGradientView: View {
 //        } else {
 //            // Fallback on earlier versions
 //        }
-        VStack{
-            
-        }
-    }
+//        VStack{
+//            
+//        }
+//    }
+//
+//    private func sinInRange(_ range: ClosedRange<Float>, offset: Float, timeScale: Float, t: Float) -> Float {
+//        let amplitude = (range.upperBound - range.lowerBound) / 2
+//        let midPoint = (range.upperBound + range.lowerBound) / 2
+//        return midPoint + amplitude * sin(timeScale * t + offset)
+//    }
+//}
 
-    private func sinInRange(_ range: ClosedRange<Float>, offset: Float, timeScale: Float, t: Float) -> Float {
-        let amplitude = (range.upperBound - range.lowerBound) / 2
-        let midPoint = (range.upperBound + range.lowerBound) / 2
-        return midPoint + amplitude * sin(timeScale * t + offset)
-    }
-}
-
-#Preview {
+//#Preview {
 //    MeshGradientView(maskTimer: .constant(0.0), gradientSpeed: .constant(0.05))
-}
+//}

@@ -27,10 +27,10 @@ struct VoiceRecordView: View {
         GeometryReader { geometry in
             ZStack {
                 // Colorful animated gradient
-                MeshGradientView(maskTimer: $maskTimer, gradientSpeed: $gradientSpeed)
-                    .scaleEffect(1.3) // avoids clipping
-                    .opacity(containerOpacity)
-                
+//                MeshGradientView(maskTimer: $maskTimer, gradientSpeed: $gradientSpeed)
+//                    .scaleEffect(1.3) // avoids clipping
+//                    .opacity(containerOpacity)
+//                
                 // Brightness rim on edges
                 if state == .thinking {
                     RoundedRectangle(cornerRadius: 52, style: .continuous)
