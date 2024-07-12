@@ -102,11 +102,15 @@ struct SpatialPressingGestureModifier: ViewModifier {
     func body(content: Content) -> some View {
         let gesture = SpatialPressingGesture(location: $currentLocation)
 
-        content
-            .gesture(gesture)
-            .onChange(of: currentLocation, initial: false) { _, location in
-                onPressingChanged(location)
-            }
+        if #available(iOS 18.0, *) {
+            content
+                .gesture(gesture)
+                .onChange(of: currentLocation, initial: false) { _, location in
+                    onPressingChanged(location)
+                }
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
 

@@ -26,9 +26,6 @@
 		0E77585E2C3FE7DC008C1CC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77585D2C3FE7DC008C1CC5 /* ContentView.swift */; };
 		0E7758602C3FE7DE008C1CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E77585F2C3FE7DE008C1CC5 /* Assets.xcassets */; };
 		0E7758632C3FE7DE008C1CC5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E7758622C3FE7DE008C1CC5 /* Preview Assets.xcassets */; };
-		0E77586D2C3FE87B008C1CC5 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0E77586C2C3FE87B008C1CC5 /* .gitkeep */; };
-		0E77586F2C3FE88A008C1CC5 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0E77586E2C3FE889008C1CC5 /* .gitkeep */; };
-		0E7758742C3FE908008C1CC5 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0E7758732C3FE908008C1CC5 /* .gitkeep */; };
 		0E7758762C3FE929008C1CC5 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = 0E7758752C3FE929008C1CC5 /* .gitkeep */; };
 		0E7758782C3FE9BE008C1CC5 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0E7758772C3FE9BE008C1CC5 /* README.md */; };
 		0E77587B2C3FEC04008C1CC5 /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77587A2C3FEC04008C1CC5 /* UIConfig.swift */; };
@@ -55,9 +52,6 @@
 		0E77585D2C3FE7DC008C1CC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E77585F2C3FE7DE008C1CC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E7758622C3FE7DE008C1CC5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0E77586C2C3FE87B008C1CC5 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		0E77586E2C3FE889008C1CC5 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		0E7758732C3FE908008C1CC5 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		0E7758752C3FE929008C1CC5 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		0E7758772C3FE9BE008C1CC5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0E77587A2C3FEC04008C1CC5 /* UIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
@@ -156,7 +150,6 @@
 			children = (
 				0359C8692C412B4300A963D2 /* SiriAnimation */,
 				0359C8602C412B1700A963D2 /* TextView.swift */,
-				0E77586E2C3FE889008C1CC5 /* .gitkeep */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -173,7 +166,6 @@
 				0359C8582C412AEB00A963D2 /* QuoteView.swift */,
 				0359C84E2C412A6900A963D2 /* HomeView.swift */,
 				0359C84C2C412A5F00A963D2 /* MainView.swift */,
-				0E77586C2C3FE87B008C1CC5 /* .gitkeep */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,7 +173,6 @@
 		0E7758702C3FE8E5008C1CC5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0E7758732C3FE908008C1CC5 /* .gitkeep */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -260,13 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E77586D2C3FE87B008C1CC5 /* .gitkeep in Resources */,
 				0E7758632C3FE7DE008C1CC5 /* Preview Assets.xcassets in Resources */,
-				0E7758742C3FE908008C1CC5 /* .gitkeep in Resources */,
 				0E7758782C3FE9BE008C1CC5 /* README.md in Resources */,
 				0E7758762C3FE929008C1CC5 /* .gitkeep in Resources */,
 				0E7758602C3FE7DE008C1CC5 /* Assets.xcassets in Resources */,
-				0E77586F2C3FE88A008C1CC5 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,7 +416,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NoteApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 5KGT723N95;
+				DEVELOPMENT_TEAM = 4JD2N84N6P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -457,7 +445,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NoteApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 5KGT723N95;
+				DEVELOPMENT_TEAM = 4JD2N84N6P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
