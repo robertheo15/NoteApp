@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0359C84D2C412A5F00A963D2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C84C2C412A5F00A963D2 /* MainView.swift */; };
+		0359C84F2C412A6900A963D2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C84E2C412A6900A963D2 /* HomeView.swift */; };
+		0359C8592C412AEB00A963D2 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8582C412AEB00A963D2 /* QuoteView.swift */; };
+		0359C85A2C412AEB00A963D2 /* TrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8522C412AEB00A963D2 /* TrendsView.swift */; };
+		0359C85B2C412AEB00A963D2 /* TextOrVoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8562C412AEB00A963D2 /* TextOrVoiceView.swift */; };
+		0359C85C2C412AEB00A963D2 /* EmotionRateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8572C412AEB00A963D2 /* EmotionRateView.swift */; };
+		0359C85D2C412AEB00A963D2 /* VoiceRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8542C412AEB00A963D2 /* VoiceRecordView.swift */; };
+		0359C85E2C412AEB00A963D2 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8552C412AEB00A963D2 /* NoteView.swift */; };
+		0359C85F2C412AEB00A963D2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8532C412AEB00A963D2 /* SettingsView.swift */; };
+		0359C8612C412B1700A963D2 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8602C412B1700A963D2 /* TextView.swift */; };
+		0359C86A2C412B4300A963D2 /* AnimatedPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8632C412B4300A963D2 /* AnimatedPath.swift */; };
+		0359C86B2C412B4300A963D2 /* MeshGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8622C412B4300A963D2 /* MeshGradientView.swift */; };
+		0359C86C2C412B4300A963D2 /* ListeningSiriAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8682C412B4300A963D2 /* ListeningSiriAnimation.swift */; };
+		0359C86D2C412B4300A963D2 /* RippleEffect.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8662C412B4300A963D2 /* RippleEffect.metal */; };
+		0359C86E2C412B4300A963D2 /* RippleEffectModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8652C412B4300A963D2 /* RippleEffectModifier.swift */; };
 		0E77585C2C3FE7DC008C1CC5 /* NoteAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77585B2C3FE7DC008C1CC5 /* NoteAppApp.swift */; };
 		0E77585E2C3FE7DC008C1CC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77585D2C3FE7DC008C1CC5 /* ContentView.swift */; };
 		0E7758602C3FE7DE008C1CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E77585F2C3FE7DE008C1CC5 /* Assets.xcassets */; };
@@ -20,6 +35,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0359C84C2C412A5F00A963D2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0359C84E2C412A6900A963D2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0359C8522C412AEB00A963D2 /* TrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsView.swift; sourceTree = "<group>"; };
+		0359C8532C412AEB00A963D2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0359C8542C412AEB00A963D2 /* VoiceRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecordView.swift; sourceTree = "<group>"; };
+		0359C8552C412AEB00A963D2 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		0359C8562C412AEB00A963D2 /* TextOrVoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextOrVoiceView.swift; sourceTree = "<group>"; };
+		0359C8572C412AEB00A963D2 /* EmotionRateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionRateView.swift; sourceTree = "<group>"; };
+		0359C8582C412AEB00A963D2 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		0359C8602C412B1700A963D2 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		0359C8622C412B4300A963D2 /* MeshGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientView.swift; sourceTree = "<group>"; };
+		0359C8632C412B4300A963D2 /* AnimatedPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedPath.swift; sourceTree = "<group>"; };
+		0359C8652C412B4300A963D2 /* RippleEffectModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleEffectModifier.swift; sourceTree = "<group>"; };
+		0359C8662C412B4300A963D2 /* RippleEffect.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RippleEffect.metal; sourceTree = "<group>"; };
+		0359C8682C412B4300A963D2 /* ListeningSiriAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningSiriAnimation.swift; sourceTree = "<group>"; };
 		0E7758582C3FE7DC008C1CC5 /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E77585B2C3FE7DC008C1CC5 /* NoteAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAppApp.swift; sourceTree = "<group>"; };
 		0E77585D2C3FE7DC008C1CC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +74,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0359C8642C412B4300A963D2 /* SiriGradients */ = {
+			isa = PBXGroup;
+			children = (
+				0359C8622C412B4300A963D2 /* MeshGradientView.swift */,
+				0359C8632C412B4300A963D2 /* AnimatedPath.swift */,
+			);
+			path = SiriGradients;
+			sourceTree = "<group>";
+		};
+		0359C8672C412B4300A963D2 /* Ripples */ = {
+			isa = PBXGroup;
+			children = (
+				0359C8652C412B4300A963D2 /* RippleEffectModifier.swift */,
+				0359C8662C412B4300A963D2 /* RippleEffect.metal */,
+			);
+			path = Ripples;
+			sourceTree = "<group>";
+		};
+		0359C8692C412B4300A963D2 /* SiriAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				0359C8642C412B4300A963D2 /* SiriGradients */,
+				0359C8672C412B4300A963D2 /* Ripples */,
+				0359C8682C412B4300A963D2 /* ListeningSiriAnimation.swift */,
+			);
+			path = SiriAnimation;
+			sourceTree = "<group>";
+		};
 		0E77584F2C3FE7DC008C1CC5 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +154,8 @@
 		0E77586A2C3FE85E008C1CC5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0359C8692C412B4300A963D2 /* SiriAnimation */,
+				0359C8602C412B1700A963D2 /* TextView.swift */,
 				0E77586E2C3FE889008C1CC5 /* .gitkeep */,
 			);
 			path = Components;
@@ -104,6 +164,15 @@
 		0E77586B2C3FE86C008C1CC5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0359C8522C412AEB00A963D2 /* TrendsView.swift */,
+				0359C8532C412AEB00A963D2 /* SettingsView.swift */,
+				0359C8542C412AEB00A963D2 /* VoiceRecordView.swift */,
+				0359C8552C412AEB00A963D2 /* NoteView.swift */,
+				0359C8562C412AEB00A963D2 /* TextOrVoiceView.swift */,
+				0359C8572C412AEB00A963D2 /* EmotionRateView.swift */,
+				0359C8582C412AEB00A963D2 /* QuoteView.swift */,
+				0359C84E2C412A6900A963D2 /* HomeView.swift */,
+				0359C84C2C412A5F00A963D2 /* MainView.swift */,
 				0E77586C2C3FE87B008C1CC5 /* .gitkeep */,
 			);
 			path = Views;
@@ -209,7 +278,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E77587B2C3FEC04008C1CC5 /* UIConfig.swift in Sources */,
+				0359C84D2C412A5F00A963D2 /* MainView.swift in Sources */,
 				0E77585E2C3FE7DC008C1CC5 /* ContentView.swift in Sources */,
+				0359C8612C412B1700A963D2 /* TextView.swift in Sources */,
+				0359C8592C412AEB00A963D2 /* QuoteView.swift in Sources */,
+				0359C85A2C412AEB00A963D2 /* TrendsView.swift in Sources */,
+				0359C85B2C412AEB00A963D2 /* TextOrVoiceView.swift in Sources */,
+				0359C85C2C412AEB00A963D2 /* EmotionRateView.swift in Sources */,
+				0359C86A2C412B4300A963D2 /* AnimatedPath.swift in Sources */,
+				0359C86B2C412B4300A963D2 /* MeshGradientView.swift in Sources */,
+				0359C86C2C412B4300A963D2 /* ListeningSiriAnimation.swift in Sources */,
+				0359C86D2C412B4300A963D2 /* RippleEffect.metal in Sources */,
+				0359C86E2C412B4300A963D2 /* RippleEffectModifier.swift in Sources */,
+				0359C85D2C412AEB00A963D2 /* VoiceRecordView.swift in Sources */,
+				0359C85E2C412AEB00A963D2 /* NoteView.swift in Sources */,
+				0359C85F2C412AEB00A963D2 /* SettingsView.swift in Sources */,
+				0359C84F2C412A6900A963D2 /* HomeView.swift in Sources */,
 				0E77585C2C3FE7DC008C1CC5 /* NoteAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
