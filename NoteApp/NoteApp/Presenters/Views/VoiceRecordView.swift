@@ -49,7 +49,7 @@ struct VoiceRecordView: View {
             }
         }
         .ignoresSafeArea()
-        .modifier(RippleEffect(at: origin, trigger: counter))
+//        .modifier(RippleEffect(at: origin, trigger: counter))
         .onAppear {
             timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
                 DispatchQueue.main.async {
