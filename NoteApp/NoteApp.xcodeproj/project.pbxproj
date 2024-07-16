@@ -432,7 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NoteApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 4JD2N84N6P;
+				DEVELOPMENT_TEAM = 5KGT723N95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow to record voice note";
@@ -462,7 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NoteApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 4JD2N84N6P;
+				DEVELOPMENT_TEAM = 5KGT723N95;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow to record voice note";

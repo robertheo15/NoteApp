@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct HomeView: View {
-    
-    
-    
     @State var isEmpty = true
+    
     let dates = (0..<8).map { index in
         let date = Date().addingTimeInterval(-Double(index) * 24 * 60 * 60)
         let formattedDate = date.formatted(date: .abbreviated, time: .omitted)
         let dayOfWeek = Calendar.current.weekdaySymbols[Calendar.current.component(.weekday, from: date) - 1]
         return (date, formattedDate, dayOfWeek)
     }
+    
     var body: some View {
         NavigationStack{
             VStack{
@@ -39,6 +38,16 @@ struct HomeView: View {
                 
             }
             .navigationTitle(LocalizedStringKey("My Notes"))
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        // Action for refresh button
+                    }) {
+                        Image(systemName: "clock.badge")
+                            .foregroundColor(.primaryBlue)
+                    }.offset(CGSize(width: 0.0, height: 40.0))
+                }
+            }
         }
     }
 }
