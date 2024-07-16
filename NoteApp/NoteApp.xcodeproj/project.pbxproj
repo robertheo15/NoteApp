@@ -22,6 +22,10 @@
 		0359C86C2C412B4300A963D2 /* ListeningSiriAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8682C412B4300A963D2 /* ListeningSiriAnimation.swift */; };
 		0359C86D2C412B4300A963D2 /* RippleEffect.metal in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8662C412B4300A963D2 /* RippleEffect.metal */; };
 		0359C86E2C412B4300A963D2 /* RippleEffectModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8652C412B4300A963D2 /* RippleEffectModifier.swift */; };
+		0359C8722C44B47D00A963D2 /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8712C44B47D00A963D2 /* Recording.swift */; };
+		0359C8762C44B4C500A963D2 /* VoiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8752C44B4C500A963D2 /* VoiceViewModel.swift */; };
+		0359C8792C44B4FD00A963D2 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8782C44B4FD00A963D2 /* Date.swift */; };
+		0359C87A2C44B4FD00A963D2 /* convertSecToMinAndHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0359C8772C44B4FD00A963D2 /* convertSecToMinAndHour.swift */; };
 		0E77585C2C3FE7DC008C1CC5 /* NoteAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77585B2C3FE7DC008C1CC5 /* NoteAppApp.swift */; };
 		0E77585E2C3FE7DC008C1CC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E77585D2C3FE7DC008C1CC5 /* ContentView.swift */; };
 		0E7758602C3FE7DE008C1CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E77585F2C3FE7DE008C1CC5 /* Assets.xcassets */; };
@@ -47,6 +51,10 @@
 		0359C8652C412B4300A963D2 /* RippleEffectModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RippleEffectModifier.swift; sourceTree = "<group>"; };
 		0359C8662C412B4300A963D2 /* RippleEffect.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = RippleEffect.metal; sourceTree = "<group>"; };
 		0359C8682C412B4300A963D2 /* ListeningSiriAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListeningSiriAnimation.swift; sourceTree = "<group>"; };
+		0359C8712C44B47D00A963D2 /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Recording.swift; path = NoteApp/Recording.swift; sourceTree = SOURCE_ROOT; };
+		0359C8752C44B4C500A963D2 /* VoiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceViewModel.swift; sourceTree = "<group>"; };
+		0359C8772C44B4FD00A963D2 /* convertSecToMinAndHour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = convertSecToMinAndHour.swift; sourceTree = "<group>"; };
+		0359C8782C44B4FD00A963D2 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		0E7758582C3FE7DC008C1CC5 /* NoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E77585B2C3FE7DC008C1CC5 /* NoteAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAppApp.swift; sourceTree = "<group>"; };
 		0E77585D2C3FE7DC008C1CC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,6 +156,8 @@
 		0E77586A2C3FE85E008C1CC5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				0359C8772C44B4FD00A963D2 /* convertSecToMinAndHour.swift */,
+				0359C8782C44B4FD00A963D2 /* Date.swift */,
 				0359C8692C412B4300A963D2 /* SiriAnimation */,
 				0359C8602C412B1700A963D2 /* TextView.swift */,
 			);
@@ -173,6 +183,7 @@
 		0E7758702C3FE8E5008C1CC5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0359C8712C44B47D00A963D2 /* Recording.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				0E7758752C3FE929008C1CC5 /* .gitkeep */,
+				0359C8752C44B4C500A963D2 /* VoiceViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -266,7 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E77587B2C3FEC04008C1CC5 /* UIConfig.swift in Sources */,
+				0359C8762C44B4C500A963D2 /* VoiceViewModel.swift in Sources */,
 				0359C84D2C412A5F00A963D2 /* MainView.swift in Sources */,
+				0359C8792C44B4FD00A963D2 /* Date.swift in Sources */,
+				0359C87A2C44B4FD00A963D2 /* convertSecToMinAndHour.swift in Sources */,
 				0E77585E2C3FE7DC008C1CC5 /* ContentView.swift in Sources */,
 				0359C8612C412B1700A963D2 /* TextView.swift in Sources */,
 				0359C8592C412AEB00A963D2 /* QuoteView.swift in Sources */,
@@ -278,6 +293,7 @@
 				0359C86C2C412B4300A963D2 /* ListeningSiriAnimation.swift in Sources */,
 				0359C86D2C412B4300A963D2 /* RippleEffect.metal in Sources */,
 				0359C86E2C412B4300A963D2 /* RippleEffectModifier.swift in Sources */,
+				0359C8722C44B47D00A963D2 /* Recording.swift in Sources */,
 				0359C85D2C412AEB00A963D2 /* VoiceRecordView.swift in Sources */,
 				0359C85E2C412AEB00A963D2 /* NoteView.swift in Sources */,
 				0359C85F2C412AEB00A963D2 /* SettingsView.swift in Sources */,
@@ -419,6 +435,7 @@
 				DEVELOPMENT_TEAM = 4JD2N84N6P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow to record voice note";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,6 +465,7 @@
 				DEVELOPMENT_TEAM = 4JD2N84N6P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Please allow to record voice note";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

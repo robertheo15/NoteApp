@@ -24,6 +24,7 @@ struct MainView: View {
                     Label("Settings", systemImage: "gear")
                 }
         }.navigationBarBackButtonHidden()
+          
     }
 }
 

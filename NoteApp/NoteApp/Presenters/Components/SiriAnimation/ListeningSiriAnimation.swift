@@ -67,11 +67,11 @@ struct ListeningSiriAnimation: View {
                         isRotating.toggle()
                     }
                 }
-        }.scaleEffect(0.6)
+        }.scaleEffect(0.4)
     }
 }
 
 
-#Preview {
-    ListeningSiriAnimation()
-}
+//#Preview {
+//    ListeningSiriAnimation()
+//}

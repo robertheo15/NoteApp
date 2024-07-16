@@ -8,92 +8,79 @@
 import SwiftUI
 
 struct VoiceRecordView: View {
-    enum SiriState {
-        case none
-        case thinking
-    }
-    @State var state: SiriState = .none
+    @ObservedObject var vm = VoiceViewModel()
     
-    // Ripple animation vars
-    @State var counter: Int = 0
-    @State var origin: CGPoint = .init(x: 0.5, y: 0.5)
+    @State private var animationScale: CGFloat = 1.0
     
-    // Gradient and masking vars
-    @State var gradientSpeed: Float = 0.03
-    @State var timer: Timer?
-    @State private var maskTimer: Float = 0.0
-
     var body: some View {
-        GeometryReader { geometry in
-            ZStack {
-                // Colorful animated gradient
-//                MeshGradientView(maskTimer: $maskTimer, gradientSpeed: $gradientSpeed)
-//                    .scaleEffect(1.3) // avoids clipping
-//                    .opacity(containerOpacity)
-//                
-                // Brightness rim on edges
-                if state == .thinking {
-                    RoundedRectangle(cornerRadius: 52, style: .continuous)
-                        .stroke(Color.white, style: .init(lineWidth: 4))
-                        .blur(radius: 4)
-                }
+        VStack {
+            ZStack{
                 
-                // Phone background mock, includes button
-                SiriBackground(state: $state, origin: $origin, counter: $counter)
-                    .mask {
-                        AnimatedRectangle(size: geometry.size, cornerRadius: 48, t: CGFloat(maskTimer))
-                            .scaleEffect(computedScale)
-                            .frame(width: geometry.size.width, height: geometry.size.height)
-                            .blur(radius: animatedMaskBlur)
-                    }
+                Circle()
+                    .scaleEffect(animationScale)
+                    .opacity(vm.isRecording ? 1.0 : 0.5)
+                
             }
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
+            .background(.tertiary)
+            .foregroundStyle(.tertiary)
+            Spacer()
+            
+            Text(vm.timer)
+                .bold()
+                .font(.largeTitle)
+            
+            HStack(spacing: 50){
+                Button{
+                    
+                }label: {
+                    Image(systemName: "gobackward.10")
+                }
+                Button{
+                    
+                }label: {
+                    Image(systemName: "play.fill")
+                }
+                Button{
+                    
+                }label: {
+                    Image(systemName: "goforward.10")
+                }
+            }.font(.largeTitle)
+                .padding(.vertical,50)
+            
+            Divider()
+            
+            Button{
+                if vm.isRecording {
+                    vm.stopRecording()
+                }else{
+                    vm.startRecording()
+                }
+            }label: {
+                Image(systemName: vm.isRecording ? "pause.fill" : "circle.fill")
+                    .resizable()
+                    .frame(width: 65, height: 65)
+                
+            }
+            
         }
-        .ignoresSafeArea()
-//        .modifier(RippleEffect(at: origin, trigger: counter))
-        .onAppear {
-            timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
-                DispatchQueue.main.async {
-                    maskTimer += rectangleSpeed
+        .onChange(of: vm.audioInputLevel) {
+                withAnimation {
+                    animationScale = CGFloat(1.0 + (vm.audioInputLevel * 2.0)) // adjust the scaling factor as needed
                 }
             }
-        }
-        .onDisappear {
-            timer?.invalidate()
-        }
         .toolbar {
             NavigationLink{
                 EmotionRateView()
             }label: {
                 Image(systemName: "checkmark")
+                    .onTapGesture {
+                        
+                            vm.fetchAllRecording()
+                        
+                    }
             }
-        }
-    }
-    
-    private var computedScale: CGFloat {
-        switch state {
-        case .none: return 1.2
-        case .thinking: return 1
-        }
-    }
-    
-    private var rectangleSpeed: Float {
-        switch state {
-        case .none: return 0
-        case .thinking: return 0.03
-        }
-    }
-    
-    private var animatedMaskBlur: CGFloat {
-        switch state {
-        case .none: return 8
-        case .thinking: return 28
-        }
-    }
-    
-    private var containerOpacity: CGFloat {
-        switch state {
-        case .none: return 0
-        case .thinking: return 1.0
         }
     }
 }
@@ -102,94 +89,4 @@ struct VoiceRecordView: View {
     VoiceRecordView()
 }
 
-struct SiriBackground: View {
-    @Binding var state: VoiceRecordView.SiriState
-    @Binding var origin: CGPoint
-    @Binding var counter: Int
-    
-    private var scrimOpacity: Double {
-        switch state {
-        case .none:
-            0
-        case .thinking:
-            0.8
-        }
-    }
-    
-    private var iconName: String {
-        switch state {
-        case .none:
-            "mic"
-        case .thinking:
-            "stop.fill"
-        }
-    }
 
-    var body: some View {
-        ZStack {
-//            Image("Background", bundle: .main)
-//                .resizable()
-//                .aspectRatio(contentMode: .fill)
-//                .scaleEffect(1.2) // avoids clipping
-//                .ignoresSafeArea()
-            
-            Rectangle()
-                .fill(Color.black)
-                .opacity(scrimOpacity)
-                .scaleEffect(1.2) // avoids clipping
-            
-            VStack {
-                welcomeText
-                
-                siriButtonView
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
-            .onPressingChanged { point in
-                if let point {
-                    origin = point
-                    counter += 1
-                }
-            }
-            .padding(.bottom, 64)
-        }
-    }
-    
-    @ViewBuilder
-    private var welcomeText: some View {
-        if state == .thinking {
-            ListeningSiriAnimation()
-                .foregroundStyle(Color.white)
-                .frame(maxWidth: 240, maxHeight: .infinity, alignment: .center)
-                .multilineTextAlignment(.center)
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .animation(.easeInOut(duration: 0.2), value: state)
-                .contentTransition(.opacity)
-            
-            
-        }
-    }
-    
-    private var siriButtonView: some View {
-        Button {
-            withAnimation(.easeInOut(duration: 0.9)) {
-                switch state {
-                case .none:
-                    state = .thinking
-                case .thinking:
-                    state = .none
-                }
-            }
-        } label: {
-            Image(systemName: iconName)
-                .contentTransition(.symbolEffect(.replace))
-                .frame(width: 96, height: 96)
-                .foregroundStyle(Color.white)
-                .font(.system(size: 32, weight: .bold, design: .monospaced))
-                .background(
-                    Circle()
-                        .fill(Color.red)
-                )
-        }
-    }
-}
