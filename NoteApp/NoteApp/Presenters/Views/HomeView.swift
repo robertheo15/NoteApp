@@ -177,7 +177,5 @@ struct NoteCalendarView: View {
         )
         .frame(width: UIScreen.main.bounds.width - 50)
         .padding(.vertical)
-        
-        
     }
 }
